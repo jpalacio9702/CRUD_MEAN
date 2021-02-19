@@ -42,8 +42,6 @@ router.delete( '/:_id', async ( req, res ) =>  {
     if ( !auto ){
         res.status( 400 ).send( "No hay auto en la db" )
     }
-
-    res.status( 200 ).send( "Auto eliminado" )
     
 })
 

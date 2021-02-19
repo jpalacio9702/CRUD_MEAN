@@ -37,13 +37,6 @@ router.put( '/', async( req, res ) => {
 })
 
 router.delete( '/:_id', async ( req, res ) =>  {
-    auto = await Auto.findByIdAndDelete( req.params._id )
-
-    if ( !auto ){
-        res.status( 400 ).send( "No hay auto en la db" )
-    }
-
-    res.status( 200 ).send( "Auto eliminado" )
     
 })
 
