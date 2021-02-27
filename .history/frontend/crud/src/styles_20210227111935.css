@@ -1,0 +1,12 @@
+.nav-link{
+    color: rgb(211, 206, 206)
+}
+
+.nav-link.active {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+ul li a:hover {
+    color: #ffff;
+}

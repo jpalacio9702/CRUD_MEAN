@@ -1,0 +1,40 @@
+<!-- <div class="row">
+    <div class="col">
+        <label>Marca</label><input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <label>Modelo</label><input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+</div><br>
+<div class="row">
+    <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+</div> -->
+
+<div class="container">
+    <form class="row g-3" (ngSubmit)="registrar()" ngNativeValidate>
+        <div class="col-md-6">
+            <label for="marca" class="form-label">Marca</label>
+            <input [(ngModel)]='nuevoAuto.marca' type="text" class="form-control" id="marca" required>
+        </div>
+        <div class="col-md-6">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input [(ngModel)]='nuevoAuto.marca' type="text" class="form-control" id="modelo">
+        </div>
+        <div class="col-md-6">
+            <label for="color" class="form-label">Color</label>
+            <input type="text" class="form-control" id="color">
+        </div>
+        <div class="col-md-6">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="text" class="form-control" id="precio">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>
